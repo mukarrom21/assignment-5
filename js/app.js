@@ -10,7 +10,7 @@ const savingAmount = document.getElementById("saving-amount");
 const remainingBalance = document.getElementById("remaining-balance");
 
 function calcMoney(myId) {
-  // string on negative error handling
+  // string, negative number and empty field error handling
   const inpt = document.getElementsByTagName("input");
   for (let input of inpt) {
     if (isNaN(input.value) || input.value < 0 || input.value == "") {
@@ -23,6 +23,7 @@ function calcMoney(myId) {
           parseInt(foodInput.value) +
           parseInt(rentInput.value) +
           parseInt(clothesInput.value);
+        // error handle: alert if total expense amount greater than income
         if (totalExpensesAmount > incomeInput.value) {
           input.value = 0;
           alert("your expenses is greater than income");
@@ -35,6 +36,7 @@ function calcMoney(myId) {
         // saving and remaining balance
         let saving =
           (parseFloat(incomeInput.value) * parseFloat(saveInput.value)) / 100;
+        // error handle: alert if saving amount greater than balance
         if (saving > balance.innerText) {
           saveInput.value = 0;
           alert("your save is greater than balance");
