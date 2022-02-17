@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-4">Income:</div>
                     <div class="col-8 float-end">
-                        <input class="" type="number" id="income-input">
+                        <input class="" type="number" id="income-input" value="10000">
                     </div>
                 </div>
             </div>
@@ -41,42 +41,46 @@
                 <div class="row">
                     <div class="col-4">Food:</div>
                     <div class="col-8 float-end">
-                        <input class="" type="number" id="food-input">
+                        <input class="" type="number" id="food-input" value="3000">
                     </div>
                 </div>
                 <!-- Rent -->
                 <div class="row my-2">
                     <div class="col-4">Rent:</div>
                     <div class="col-8 float-end">
-                        <input class="" type="number" id="rent-input">
+                        <input class="" type="number" id="rent-input" value="2000">
                     </div>
                 </div>
                 <!-- Clothes -->
                 <div class="row">
                     <div class="col-4">Clothes:</div>
                     <div class="col-8 float-end">
-                        <input class="" type="number" id="clothes-input">
+                        <input class="" type="number" id="clothes-input" value="1000">
                     </div>
                 </div>
             </div>
             <!-- Expenses input ends -->
-            
+
             <button class="btn btn-primary mx-auto d-block my-3 px-4" id="calculate-btn">Calculate</button>
             <!-- Total Expanses and balance -->
             <div>
-                <h4 class="text-center">Total Expenses: <span class="total-expenses">0</span></h4>
-                <h4 class="text-center">Balance: <span class="balance">0</span></h4>
+                <h4 class="text-center">Total Expenses: <span id="total-expenses">0</span></h4>
+                <h4 class="text-center">Balance: <span id="balance">0</span></h4>
             </div>
             <!-- save calculate -->
             <div class="row">
-                <div class="col-2"><p>Save:</p></div>
+                <div class="col-2">
+                    <p>Save:</p>
+                </div>
                 <div class="col-4"><input class="w-100 py-1" type="number" id="save-input"></div>
-                <div class="col-2"><p>%</p></div>
+                <div class="col-2">
+                    <p>%</p>
+                </div>
                 <div class="col-4"><button class="btn btn-primary w-100" id="seve-btn">save</button></div>
             </div>
             <!-- save amount and remaining balance -->
-            <h4 class="text-center">Saving Amount: <span class="saving-amount">0</span></h4>
-            <h4 class="text-center">Remaining Balance: <span class="remaining-balance">0</span></h4>
+            <h4 class="text-center">Saving Amount: <span id="saving-amount">0</span></h4>
+            <h4 class="text-center">Remaining Balance: <span id="remaining-balance">0</span></h4>
         </div>
 
 </section>
