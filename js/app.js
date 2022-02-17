@@ -10,14 +10,14 @@ const savingAmount = document.getElementById("saving-amount");
 const remainingBalance = document.getElementById("remaining-balance");
 
 function calcMoney(myId) {
-  // string, negative number and empty field error handling
+  // error handle : string, negative number and empty
   const inpt = document.getElementsByTagName("input");
   for (let input of inpt) {
     if (isNaN(input.value) || input.value < 0 || input.value == "") {
       alert("Sorry, you can not enter input string or negative number");
       input.value = 0;
     } else {
-      // calculate
+      // calculate total expanses
       if (myId == true) {
         let totalExpensesAmount =
           parseInt(foodInput.value) +
